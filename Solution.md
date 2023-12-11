@@ -59,7 +59,7 @@ The architecture vision for this solution includes:
 
 ## System Requirements
 
-## Stakeholders
+### Stakeholders
  
 This section describes key stakeholders of the system and their architectural concerns.
  
@@ -96,9 +96,9 @@ This section describes key stakeholders of the system and their architectural co
 - **SH-11: Cyber Security Operations Manager**
   - Ensures that there are no security breaches in the system.
 
-### Business Requirements
+## Business Requirements
 
-## Customer Profile Management
+### Customer Profile Management
  
 - Detailed and comprehensive customer profiles that include 
   - Personal information
@@ -118,7 +118,7 @@ This section describes key stakeholders of the system and their architectural co
 - Capability to share profile data with strategic partners while preserving anonymity in compliance with privacy regulations, while also revealing essential insights into segments, preferences, and choices
  
  
-## Customer Interaction Management
+### Customer Interaction Management
  
 - Logs of all past interactions, including calls, emails, chats, and in-flight retail purchases, stored within customer profiles.
  
@@ -131,7 +131,7 @@ This section describes key stakeholders of the system and their architectural co
   - Suggestions.
  
  
-## Customer Order Management
+### Customer Order Management
  
 - Capture and store customer preferences related to orders, such as :
   - Meal choices 
@@ -142,7 +142,7 @@ This section describes key stakeholders of the system and their architectural co
 - Integration with customer support and complaint handling systems to address order-related issues promptly
  
  
-## Compensation Management
+### Compensation Management
  
 - Automated Compensation calculation and processing based on rules and policies.
  
@@ -150,7 +150,7 @@ This section describes key stakeholders of the system and their architectural co
  
 - Notifications regarding compensation resolutions.
  
-## Case Management
+### Case Management
  
 - Case creation, prioritization, tracking, and updates.
  
@@ -160,7 +160,7 @@ This section describes key stakeholders of the system and their architectural co
  
 - Notifications regarding case status and closures.
  
-## Customer Analytics Capabilities
+### Customer Analytics Capabilities
  
 - Data collection mechanisms from all touchpoints to gather information on passenger interactions, preferences, and behaviors.
  
@@ -173,14 +173,14 @@ This section describes key stakeholders of the system and their architectural co
 - Capability to envisage various actions that could be implemented for a specific customer and then choose the best possible option to implement.
  
  
-## Easy to Use
+### Easy to Use
  
 - Intuitive, multi-channel and user-friendly interfaces for passengers, call center agents, check-in agents, cabin crew, service management, and retail staff.
  
 - Simplified navigation and clear layouts to access customer profiles and historical data.
  
  
-## Secured Platform
+### Secured Platform
  
 - Right authentication and authorization implemented.
  
