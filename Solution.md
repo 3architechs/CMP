@@ -171,7 +171,7 @@ The effectiveness of implementing and operating the new Customer Management Plat
 
 
 ## Container diagram
-![Container](architecture-diagrams/C1 -Container.jpg)
+![Container](architecture-diagrams/C1-Container.jpg)
 
 
 ## Component diagram - Preference and Consent Management
