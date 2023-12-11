@@ -1,6 +1,8 @@
 
 
-# Business Case:
+# Architecture Katas:
+
+** Business Case **
 A leading airline is striving to build a comprehensive Customer Management Platform solution that enables the foundation of data driven, customer centric organization. This platform should enable to manage customer information across the ticket booking platforms both online and agents, call centre , check in desks, customer affairs and services, in flight retail, lounges, chauffer driven services and baggage services
 
 
@@ -23,7 +25,9 @@ A leading airline is striving to build a comprehensive Customer Management Platf
 1. Enhance customer satisfaction and fuel customer retention.
 1. Increase revenue and profit.
 
- **Architecture Vision**  ** ** The architecture vision  for this solution.
+ **Architecture Vision**  
+ 
+ The architecture vision  for this solution.
 
 
 1. Integration of all available pieces of customer data to create a holistic view of the customer.
@@ -699,9 +703,3 @@ Fitness Functions
 
 
 
- **Risk Analysis** 
-
-*****
-
-[[category.storage-team]] 
-[[category.confluence]] 
