@@ -167,6 +167,7 @@ The effectiveness of implementing and operating the new Customer Management Plat
 
 ## System context diagram
 
+![Vision](architecture-diagrams/C0-System-Context.jpg)
 
 
 
