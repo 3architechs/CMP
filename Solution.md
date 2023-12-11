@@ -1,8 +1,9 @@
+#Architecture Katas - Customer Management Platform
 
-Business Case:
+## Business Case:
 A leading airline is striving to build a comprehensive Customer Management Platform solution that enables the foundation of data driven, customer centric organization. This platform should enable to manage customer information across the ticket booking platforms both online and agents, call centre , check in desks, customer affairs and services, in flight retail, lounges, chauffer driven services and baggage services
 
-Business Drivers / Current Challenges
+## Business Drivers / Current Challenges
 Poor customer experience
 Lack of customer insights
 Absence of customer's historical interactions/transactions
@@ -18,8 +19,9 @@ Drive the sale of ancillary products and services.
 Proactive grievance management and service recovery.
 Enhance customer satisfaction and fuel customer retention.
 Increase revenue and profit.
-Architecture Vision
- The architecture vision  for this solution.
+
+## Architecture Vision
+The architecture vision  for this solution.
 Integration of all available pieces of customer data to create a holistic view of the customer.
 Utilise data as a differentiator to enhance and personalize the organisations offerings
 Provide advanced data analytic tools that can be used to uncover insights, identify patterns, predict outcomes, and generate recommendations.
@@ -35,7 +37,7 @@ Create consistent, user friendly and intuitive UI designs to improve user experi
 Platform components should be designed to provide a omni channel consistent brand experience.
 
 
-Architecture Principles
+## Architecture Principles
 Sr#	Name	Description
 1	Future Proof	Technology must be viable for our use not only today but also in the foreseeable future.
 2	Interoperability	Technology must be capable to work with other technologies in the landscape.
@@ -64,21 +66,12 @@ It is important that solutions are designed and developed with non-functional re
 10	Loosely coupled, interoperable integrations 	
 Solutions share well-defined integration points, which are standards based, interoperable and loosely coupled.
 11	Customer Centric Design 	
-Every hardware and software solution should be designed to comply with universal design guidelines and where required accessibility requirements
+Every hardware and software solution should be designed to comply with universal design guidelines and where required accessibility requirements.
 
 
-Well Architected Framework
-Security	Reliability	Operational Excellence	Cost-Optimisation	
-Performance efficiency
+## System Requirements
 
-
-
-
-
-
-System Requirements
-
-Stakeholders
+### Stakeholders
 
 This section describes key stakeholders of the system and their architectural concerns.
 SH-1: Contact Centre Agent 
@@ -105,9 +98,7 @@ Creates suitable product bundles for cross-selling during in-flight retail.
 SH-11: Cyber Security Operations Manager
 Ensures that there are no security breaches in the system
 
-Business Requirements
-_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-
+### Business Requirements
 
 Sr#	Capability	Key Business
 Requirements
@@ -163,10 +154,8 @@ customer and then chooses the best possible option to implement
 • Comprehensive logging and auditing of all customer data access and modifications.
 
 
-        
-Constraints
 
-Assumptions
+## Assumptions
 The Analytics and reporting module provides near real-time data analysis for up-to-the-minute insights into customer interactions and trends which is largely reliant on the data received from source systems.
 Businesses often have varying processes for handling customer cases, and the module should would be a generic 
 The enterprise data lake serves as a robust foundation for our advanced customer analytics , harmonizing a myriad of customer data sources to provide a panoramic 360-degree perspective on customer behaviours and preferences.
@@ -176,22 +165,22 @@ The successful integration and utilization of the new Customer Management Platfo
 The effectiveness of implementing and operating the new Customer Management Platform will depend on the smooth integration and efficient communication enabled by the Enterprise Message broker . This assumption envisions that the message bus will adeptly manage the real-time exchange of data and information between the CMP system and other interconnected enterprise applications.
    
 
-System context diagram
+## System context diagram
 
 
 
 
 
 
-Container diagram
+## Container diagram
 
 
-Component diagram - Preference and Consent Management
+## Component diagram - Preference and Consent Management
 
 
 
 
- Deployment Diagram
+## Deployment Diagram
 
 
 
@@ -220,13 +209,13 @@ In event of failure configure health checks for automated failover.
 Backups and disaster recovery drills will be carried out to ensure set RPO and RTO can be met.
 
 .
-Integration Diagram
+## Integration Diagram
 
 
 
 
 
-Domain and Data Architecture
+## Domain and Data Architecture
 Please capture the main data assets used by the initiative and their relationships. A sample model is presented below. When the further details become available, the model can be elaborated to a logical level. Please note the model is at the conceptual level.
 
 
@@ -336,7 +325,7 @@ Knowledge articles and SOPs	KMS
 
 
 
-Architecture Decision Records
+## Architecture Decision Records
 Key decisions taken for the implementation of the interfaces:
 Architectural Decision Record (ADR)
 Link to confluence 
@@ -490,7 +479,7 @@ Dependency Management: Regular updates to React and its ecosystem may require on
 
 
 
-Well Architected Framework Tracability
+## Well Architected Framework Tracability
 
 
 Name	Entity	High Level Solution	Fitness Function
@@ -547,4 +536,4 @@ Access is granted to users, groups, and applications at a specific scope.
 Personal Data and Sensitive Data attributes is masked and stored in order to meet GDPR norms related to data privacy protection.
 Data retention policies in place for sensitive customer data.
 
-Risk Analysis
+
