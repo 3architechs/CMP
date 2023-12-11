@@ -38,35 +38,19 @@ Platform components should be designed to provide a omni channel consistent bran
 
 
 ## Architecture Principles
-Sr#	Name	Description
-1	Future Proof	Technology must be viable for our use not only today but also in the foreseeable future.
-2	Interoperability	Technology must be capable to work with other technologies in the landscape.
-3	Maintainability	
-Capability of Technology to
-Support changes gracefully in existing solutions deployed in this technology
-Support enterprise automated environment management and automated release management processes. If not, technologies should have alternatives to ensure seamless environment management and release management capabilities
-Customisations done are supported and scalable with future releases
-4	Abstraction	
-Where possible, the underlying complexity of any technology should be presented through higher levels of abstraction.
-5	Portability	
-Technology should be portable as much as possible at all levels.
-For example:
-It should be possible to deploy in house as well as on the cloud etc.
-Data handled or stored by any technology should be easily extracted.
-6	Choose Right Fit Solutions	
-Commercial-off-the-shelf (COTS) packages should be selected based on their fit to the identified functional and non-functional requirements.
-Common use applications are preferred over custom solutions
-Platforms preferred over best of breed solutions.
-Adopt industry standard business process and integrations instead of Adapting the business process to prescribed standards
-7	Design for failure	
-Solutions must be designed to ensure that the applications can fully or partially available and or recover from software or infrastructure failures.
-8	Separation of Concerns	Solutions are divided into discrete software components which are autonomous in nature.
-9	Design to meet SLA	
-It is important that solutions are designed and developed with non-functional requirements in mind to meet service levels agreements offered to our customers. 
-10	Loosely coupled, interoperable integrations 	
-Solutions share well-defined integration points, which are standards based, interoperable and loosely coupled.
-11	Customer Centric Design 	
-Every hardware and software solution should be designed to comply with universal design guidelines and where required accessibility requirements.
+| SL                     | Name                                   | Description
+| ---------------------- | -------------------------------------- |---------------------------------------------------------------------------------------- |
+| 1                      |Future Proof	                           | Technology must be viable for our use not only today but also in the foreseeable future.|
+| 2                      |Interoperability                        | Technology must be capable to work with other technologies in the landscape.            |
+| 3                      |Maintainability	                        | Capability of Technology to 1)Support changes gracefully in existing solutions deployed in this technology 2)Support enterprise automated environment management and automated release management processes. If not, technologies should have alternatives to ensure seamless environment management and release management capabilities 3)Customisations done are supported and scalable with future releases            |
+| 4                      |Abstraction                             | Where possible, the underlying complexity of any technology should be presented through higher levels of abstraction.                                                                                                                                      |
+| 5                      |Portability	                            | Technology should be portable as much as possible at all levels. For example: 1)It should be possible to deploy in house as well as on the cloud etc. 2)Data handled or stored by any technology should be easily extracted.                             |
+| 6                      |Choose Right Fit Solutions              | 1)Commercial-off-the-shelf (COTS) packages should be selected based on their fit to the identified functional and non-functional requirements. 2) Common use applications are preferred over custom solutions. 3)Platforms preferred over best of breed solutions.4)Adopt industry standard business process and integrations instead of Adapting the business process to prescribed standards                      |
+| 7                      |Design for failure	                     | Solutions must be designed to ensure that the applications can fully or partially available and or recover from software or infrastructure failures.                                                                                                    |
+| 8                      |Separation of Concerns                  | Solutions are divided into discrete software components which are autonomous in nature. |
+| 9                      |Design to meet SLA	                     | It is important that solutions are designed and developed with non-functional requirements in mind to meet service levels agreements offered to our customers.                                                                                            |
+| 10                     |Loosely coupled, interoperable integrations| Solutions share well-defined integration points, which are standards based, interoperable and loosely coupled.                                                                                                                                        |
+| 11                     |Customer Centric Design                    | Every hardware and software solution should be designed to comply with universal design guidelines and where required accessibility requirements                                                                                                    |
 
 
 ## System Requirements
