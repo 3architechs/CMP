@@ -167,13 +167,11 @@ The effectiveness of implementing and operating the new Customer Management Plat
 
 ## System context diagram
 
-![Vision](architecture-diagrams/C0-System-Context.jpg)
-
-
-
+![System-Context](architecture-diagrams/C0-System-Context.jpg)
 
 
 ## Container diagram
+![Container](architecture-diagrams/C1 -Container.jpg)
 
 
 ## Component diagram - Preference and Consent Management
