@@ -313,7 +313,10 @@ Knowledge articles and SOPs	KMS
 
 [**ADR 1 Fundamental Architecture ADR**](Architecture-Decision-Records/Fundamental-Architecture.md)
 
-
+[**ADR 2 Authentication and authorisation ADR**](Architecture-Decision-Records/Authentication.md)
+[**ADR 3 Dedicated Mobile App ADR**](Architecture-Decision-Records/DedicatedMobileApp-Requirement.md)
+[**ADR 4 User Interface Technology  ADR**](Architecture-Decision-Records/USerInterface-technology.md)
+[**ADR 5 Backend Technology ADR**](Architecture-Decision-Records/Backend-Microservices-Technology.md)
 
 ## Well Architected Framework Tracability
 
