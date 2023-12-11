@@ -1,4 +1,4 @@
-#Architecture Katas - Customer Management Platform
+# Architecture Katas - Customer Management Platform
 
 ## Business Case:
 A leading airline is striving to build a comprehensive Customer Management Platform solution that enables the foundation of data driven, customer centric organization. This platform should enable to manage customer information across the ticket booking platforms both online and agents, call centre , check in desks, customer affairs and services, in flight retail, lounges, chauffer driven services and baggage services
