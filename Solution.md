@@ -198,110 +198,31 @@ The effectiveness of implementing and operating the new Customer Management Plat
 
 ## Domain and Data Architecture
 ![Data](architecture-diagrams/DataArchitecture.jpg)
-Please capture the main data assets used by the initiative and their relationships. A sample model is presented below. When the further details become available, the model can be elaborated to a logical level. Please note the model is at the conceptual level.
 
-
-
-
-Sr#	Category	Data element	Source	Destination	Information Classification	Data Format	Integration Method	Remarks
-1	Profile	Unique Profile ID, Email address, Phone number, Title, Last name, First name, Middle name,  Loyalty Number, Loyalty status, Passport number, Nationality, Passport expiry, Gender, Address, Device details, browser details, location.	
-Loyalty
-Channels
-GDS
-Partners
-CMP	Sensitive data	
-
-
-2	Preferences	Seat, meal, drink 	Loyalty > EDH	CMP	
-
-
-Customer Self service capabilities
-3	Past Interactions	Calls, Emails, Chats 	CC Voice Platform	CMP	
-
-
-
-5	Case Management	Complaints, Resolution, Status	Channels 	CMP	
-
-
- Case creation, prioritization, tracking and updates. Case Assignment, Routing, and escalation capabilities. Notifications regarding case status and closures
-7	Compensation	Compensation history	Finance	
-
-
-
-Automated Compensation calculation and processing based on rules and policies. Notifications regarding compensation resolutions
-10	
-Consent and Subscriptions
-Related attributes	
+|Sr|Category|Data element|Source|Destination|Information Classification|Data Format|Integration Method|Remarks|
+|--|--------|-------|-----|----|-----|--|------|----|
+|1|Profile|Unique Profile ID, Email address, Phone number, Title, Last name, First name, Middle name,  Loyalty Number, Loyalty status*,* Passport number, Nationality, Passport expiry, Gender, Address*,* Device details, browser details, location.|Loyalty, Channels, GDS, Partners|CMP|Sensitive data| | | |
+|2|Preferences|Seat, meal, drink |Loyalty > EDH|CMP| | | |Customer Self service capabilities|
+|3|Past Interactions|Calls, Emails, Chats |CC Voice Platform|CMP| | | | |
+|5|Case Management|Complaints, Resolution, Status|Channels |CMP| | | | Case creation, prioritization, tracking and updates. Case Assignment, Routing, and escalation capabilities. Notifications regarding case status and closures|
+|7|Compensation|Compensation history|Finance| | | | |Automated Compensation calculation and processing based on rules and policies. Notifications regarding compensation resolutions|
+|10|Consent and Subscriptions|Related attributes| | | | | | |
+|6|Suggestions and compliments|Related attributes| | | | | |chronological timeline view,|
+|8|Travel Booked and Historical|PNR, Flight details (Flight number, Departure airport, Arrival airport , date of travel, class of travel), E-Ticket number, Status (On Time, No Show, Delay, Involuntary Rebooked), Gate Number, Date of travel, Bag Tag number|Mainframe > EDH| | | | | |
+|9|Ancillary Booked and Historical|Ancillary Type, Ancillary related attributes, Status (Fulfilled, service disruption)|Mainframe > EDH| | | | | |
+|4|Purchases|In flight purchases, EK websites purchases| | | | | |Personalization of future orders based on customer preferences.|
+|11|Post Order|Shipment details, Invoice| | | | | | |
+|12|Flight Segment forecast|Cabin, RBD, Load|Mainframe > EDH| | | | | |
+|13|Business Rules|Rules|CMP|CMP| | | | |
+|14|Knowledge Management|Knowledge articles and SOPs|KMS| | | | | |
+|16|Profile|Unique Profile ID, Email address, Phone number, Title, Last name, First name, Middle name,  Loyalty Number, Loyalty status*,* Passport number, Nationality, Passport expiry, Gender, Address*,* Device details, browser details, location.|*CMP*|*Channels* | | | | |
+|17|Preferences|Seat, meal, drink |*CMP*|*Channels* | | | | |
+|18|Compensation|Compensation history|*CMP*|*Channels* | | | | |
 
 
 
 
 
-6	Suggestions and compliments	Related attributes	
-
-
-
-
-chronological timeline view,
-8	
-Travel Booked 
-and Historical
-PNR, Flight details (Flight number, Departure airport, Arrival airport , date of travel, class of travel), E-Ticket number, Status (On Time, No Show, Delay, Involuntary Rebooked), Gate Number, Date of travel, Bag Tag number	Mainframe > EDH	
-
-
-
-
-9	
-Ancillary Booked 
-and Historical
-Ancillary Type, Ancillary related attributes, Status (Fulfilled, service disruption)	Mainframe > EDH	
-
-
-
-
-4	Purchases	In flight purchases, EK websites purchases	
-
-
-
-
-Personalization of future orders based on customer preferences.
-11	
-Post Order
-Shipment details, Invoice	
-
-
-
-
-
-12	
-Flight Segment forecast
-Cabin, RBD, Load	Mainframe > EDH	
-
-
-
-
-13	
-Business Rules
-Rules	CMP	CMP	
-
-
-
-14	
-Knowledge Management
-Knowledge articles and SOPs	KMS	
-
-
-
-
-16	Profile	Unique Profile ID, Email address, Phone number, Title, Last name, First name, Middle name,  Loyalty Number, Loyalty status, Passport number, Nationality, Passport expiry, Gender, Address, Device details, browser details, location.	CMP	Channels 	
-
-
-
-17	Preferences	Seat, meal, drink 	CMP	Channels 	
-
-
-
-18	Compensation	Compensation history	CMP	Channels 	
 
 
 
