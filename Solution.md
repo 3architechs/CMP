@@ -154,13 +154,20 @@ customer and then chooses the best possible option to implement
 
 
 ## Assumptions
-The Analytics and reporting module provides near real-time data analysis for up-to-the-minute insights into customer interactions and trends which is largely reliant on the data received from source systems.
-Businesses often have varying processes for handling customer cases, and the module should would be a generic 
-The enterprise data lake serves as a robust foundation for our advanced customer analytics , harmonizing a myriad of customer data sources to provide a panoramic 360-degree perspective on customer behaviours and preferences.
-The CMP platform's user access needs will be efficiently addressed through a user-friendly, responsive web application, eliminating the necessity for a dedicated app and ensuring seamless accessibility for users across diverse devices and platforms.
-The marketing platform as an external entity to the CMP platform system allowing this platform to excel in its specialized functions. This segregation ensures streamlined maintenance, facilitates updates without disrupting CRM operations, and allows for the independent evolution of marketing strategies, ultimately optimizing overall performance.
-The successful integration and utilization of the new Customer Management Platform within the organization will be contingent upon seamless and efficient data extraction, transformation, and loading (ETL) processes facilitated by the enterprise SnapLogic ETL/ELT platform.
-The effectiveness of implementing and operating the new Customer Management Platform will depend on the smooth integration and efficient communication enabled by the Enterprise Message broker . This assumption envisions that the message bus will adeptly manage the real-time exchange of data and information between the CMP system and other interconnected enterprise applications.
+ 
+1. The Analytics and reporting module provides near real-time data analysis for up-to-the-minute insights into customer interactions and trends, largely reliant on the data received from source systems.
+ 
+2. Businesses often have varying processes for handling customer cases, and the module should be a generic solution.
+ 
+3. The enterprise data lake serves as a robust foundation for our advanced customer analytics, harmonizing a myriad of customer data sources to provide a panoramic 360-degree perspective on customer behaviors and preferences.
+ 
+4. The CMP platform's user access needs will be efficiently addressed through a user-friendly, responsive web application, eliminating the necessity for a dedicated app and ensuring seamless accessibility for users across diverse devices and platforms.
+ 
+5. The marketing platform operates as an external entity to the CMP platform system, allowing this platform to excel in its specialized functions. This segregation ensures streamlined maintenance, facilitates updates without disrupting CRM operations, and allows for the independent evolution of marketing strategies, ultimately optimizing overall performance.
+ 
+6. The successful integration and utilization of the new Customer Management Platform within the organization will be contingent upon seamless and efficient data extraction, transformation, and loading (ETL) processes facilitated by the enterprise SnapLogic ETL/ELT platform.
+ 
+7. The effectiveness of implementing and operating the new Customer Management Platform will depend on the smooth integration and efficient communication enabled by the Enterprise Message broker. This assumption envisions that the message bus will adeptly manage the real-time exchange of data and information between the CMP system and other interconnected enterprise applications.
    
 
 ## System context diagram
