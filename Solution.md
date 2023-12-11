@@ -98,59 +98,99 @@ This section describes key stakeholders of the system and their architectural co
 
 ### Business Requirements
 
-Sr#	Capability	Key Business
-Requirements
-1	Customer Profile Management	
-Detailed and comprehensive customer profiles that include (BR - 01)
-Personal information
-Travel history 
-Preferences 
-Past interactions.
-A centralized repository that aggregates and stores customer data from various touchpoints and systems. (EN - 01)
-Tools for segmenting customers based on various criteria such as (BR - ) 
-Travel history
-Preferences
-Loyalty status. 
-Personalization features to tailor interactions and offers to individual  customers. (BR - ) 
-Capability to share profile data with strategic partners while preserving anonymity in compliance with privacy regulations, while also revealing essential insights into segments, preferences, and choices. (BR - ) 
-2	Customer Interaction Management	
-Logs of all past interactions, including calls, emails, chats, and in-flight retail purchases, stored within customer profiles. (BR - ) 
-A chronological timeline view of each customer's interactions and transactions, allowing for easy tracking and reference. (BR - ) 
-Critical information from customer feedback data, into customer profiles, including (BR - ) 
-Complaints,
-Compliments,
-Cases and
-Suggestions
-3	Customer Order Management	
-Capture and store customer preferences related to orders, such as (BR - )
-Meal choices 
-Seating preferences.
-Personalization of future orders based on customer preferences. (BR - )
-Integration with customer support and complaint handling systems to address order related issues promptly. (BR - )
-4	Compensation Management	• Automated Compensation calculation and processing based on rules and policies
-• Support for multiple compensation scenarios, flight cancellation, delays, and baggage
-mishandling.
-•Notifications regarding compensation resolutions
-5	Case Management	• Case creation, prioritization, tracking and updates.
-• Case Assignment, Routing, and escalation capabilities
-• Customer Self service capabilities
-•Notifications regarding case status and closures
-6	Customer Analytics Capabilities	• Data collection mechanisms from all the touchpoints to gather information on
-passenger interactions, preferences, and behaviours.
-• Real-time data processing and analysis to provide timely insights and responses
-• Advanced analytics capabilities including machine learning, and predictive analytics.
-• Sentiment analysis of customer feedback and social media mentions to gauge
-passenger satisfaction
-• Capability to envisages various actions that could be implemented for a specific
-customer and then chooses the best possible option to implement
-7	 Easy to Use	• Intuitive, multi-channel and user-friendly interfaces for passengers, call centre agents, check-in agents, cabin crew, service management and retail staff.
-• Simplified navigation and clear layouts to access customer profiles and historical data.
-8	 Secured Platform	• Right authentication and authorization implemented
-• Supports RBAC & MFA
-• Sensitive data encrypted at rest and transit
-• Conforms to GDPR, PCIDSS and other regulatory requirements.
-• Comprehensive logging and auditing of all customer data access and modifications.
-
+## Customer Profile Management
+ 
+- Detailed and comprehensive customer profiles that include 
+  - Personal information
+  - Travel history 
+  - Preferences 
+  - Past interactions.
+ 
+- A centralized repository that aggregates and stores customer data from various touchpoints and systems
+ 
+- Tools for segmenting customers based on various criteria such as 
+  - Travel history
+  - Preferences
+  - Loyalty status.
+ 
+- Personalization features to tailor interactions and offers to individual customers
+ 
+- Capability to share profile data with strategic partners while preserving anonymity in compliance with privacy regulations, while also revealing essential insights into segments, preferences, and choices
+ 
+ 
+## Customer Interaction Management
+ 
+- Logs of all past interactions, including calls, emails, chats, and in-flight retail purchases, stored within customer profiles.
+ 
+- A chronological timeline view of each customer's interactions and transactions, allowing for easy tracking and reference .
+ 
+- Critical information from customer feedback data, into customer profiles, including :
+  - Complaints,
+  - Compliments,
+  - Cases, and
+  - Suggestions.
+ 
+ 
+## Customer Order Management
+ 
+- Capture and store customer preferences related to orders, such as :
+  - Meal choices 
+  - Seating preferences.
+ 
+- Personalization of future orders based on customer preferences .
+ 
+- Integration with customer support and complaint handling systems to address order-related issues promptly
+ 
+ 
+## Compensation Management
+ 
+- Automated Compensation calculation and processing based on rules and policies.
+ 
+- Support for multiple compensation scenarios, including flight cancellation, delays, and baggage mishandling.
+ 
+- Notifications regarding compensation resolutions.
+ 
+## Case Management
+ 
+- Case creation, prioritization, tracking, and updates.
+ 
+- Case Assignment, Routing, and escalation capabilities.
+ 
+- Customer Self-service capabilities.
+ 
+- Notifications regarding case status and closures.
+ 
+## Customer Analytics Capabilities
+ 
+- Data collection mechanisms from all touchpoints to gather information on passenger interactions, preferences, and behaviors.
+ 
+- Real-time data processing and analysis to provide timely insights and responses.
+ 
+- Advanced analytics capabilities including machine learning, and predictive analytics.
+ 
+- Sentiment analysis of customer feedback and social media mentions to gauge passenger satisfaction.
+ 
+- Capability to envisage various actions that could be implemented for a specific customer and then choose the best possible option to implement.
+ 
+ 
+## Easy to Use
+ 
+- Intuitive, multi-channel and user-friendly interfaces for passengers, call center agents, check-in agents, cabin crew, service management, and retail staff.
+ 
+- Simplified navigation and clear layouts to access customer profiles and historical data.
+ 
+ 
+## Secured Platform
+ 
+- Right authentication and authorization implemented.
+ 
+- Supports RBAC & MFA (Multi-Factor Authentication).
+ 
+- Sensitive data encrypted at rest and in transit.
+ 
+- Conforms to GDPR, PCIDSS, and other regulatory requirements.
+ 
+- Comprehensive logging and auditing of all customer data access and modifications.
 
 
 ## Assumptions
