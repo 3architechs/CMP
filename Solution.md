@@ -4,37 +4,41 @@
 A leading airline is striving to build a comprehensive Customer Management Platform solution that enables the foundation of data driven, customer centric organization. This platform should enable to manage customer information across the ticket booking platforms both online and agents, call centre , check in desks, customer affairs and services, in flight retail, lounges, chauffer driven services and baggage services
 
 ## Business Drivers / Current Challenges
-Poor customer experience
-Lack of customer insights
-Absence of customer's historical interactions/transactions
-Lack of automated service recovery options.
-Complex system landscape leading to cumbersome data privacy management
-Business Goals
-Create detailed and comprehensive customer profiles
-Coupled with analytical tools, allow airline to remain closely engaged with the customers
-Create a seamless travel/customer experience.
-Build personalized and tailored interactions and offers.
-Tailor a marketing campaign to specific profiles.
-Drive the sale of ancillary products and services.
-Proactive grievance management and service recovery.
-Enhance customer satisfaction and fuel customer retention.
-Increase revenue and profit.
+ 
+- Poor customer experience
+- Lack of customer insights
+- Absence of customer's historical interactions/transactions
+- Lack of automated service recovery options.
+- Complex system landscape leading to cumbersome data privacy management
+
+## Business Goals
+- Create detailed and comprehensive customer profiles
+- Couple with analytical tools to allow the airline to remain closely engaged with the customers
+- Create a seamless travel/customer experience
+- Build personalized and tailored interactions and offers
+- Tailor a marketing campaign to specific profiles
+- Drive the sale of ancillary products and services
+- Proactive grievance management and service recovery
+- Enhance customer satisfaction and fuel customer retention
+- Increase revenue and profit.
+ 
 
 ## Architecture Vision
-The architecture vision  for this solution.
-Integration of all available pieces of customer data to create a holistic view of the customer.
-Utilise data as a differentiator to enhance and personalize the organisations offerings
-Provide advanced data analytic tools that can be used to uncover insights, identify patterns, predict outcomes, and generate recommendations.
-Create a solution utilizing latest technology stacks that is interoperable and can scale in order to sustain the business growth and adapt to organisation changes.
-Plan and provision application resources that are cost efficient.
-Design application, hosting and deployment methods will be cloud agnostic. 
-Implement automation processes on repetitive tasks to minimise error and in order to FastTrack time to market
-Ensure comprehensive Identity and access management framework.
-Comply with GDPR, preserve anonymity in compliance with privacy regulations
-Conform to PCIDSS and other regulatory requirements.
-Provision comprehensive logging and auditing of all consumer data access and modifications.
-Create consistent, user friendly and intuitive UI designs to improve user experience.
-Platform components should be designed to provide a omni channel consistent brand experience.
+The architecture vision for this solution includes:
+ 
+- Integration of all available pieces of customer data to create a holistic view of the customer.
+- Utilize data as a differentiator to enhance and personalize the organization's offerings.
+- Provide advanced data analytic tools that can uncover insights, identify patterns, predict outcomes, and generate recommendations.
+- Create a solution utilizing the latest technology stacks that is interoperable and can scale to sustain business growth and adapt to organizational changes.
+- Plan and provision application resources that are cost-efficient.
+- Design application, hosting, and deployment methods to be cloud-agnostic.
+- Implement automation processes on repetitive tasks to minimize errors and FastTrack time to market.
+- Ensure a comprehensive Identity and access management framework.
+- Comply with GDPR, preserve anonymity in compliance with privacy regulations.
+- Conform to PCIDSS and other regulatory requirements.
+- Provision comprehensive logging and auditing of all consumer data access and modifications.
+- Create consistent, user-friendly, and intuitive UI designs to improve the user experience.
+- Platform components should be designed to provide an omni-channel consistent brand experience.
 
 
 ## Architecture Principles
@@ -55,32 +59,42 @@ Platform components should be designed to provide a omni channel consistent bran
 
 ## System Requirements
 
-### Stakeholders
-
+## Stakeholders
+ 
 This section describes key stakeholders of the system and their architectural concerns.
-SH-1: Contact Centre Agent 
-Provides customer service with regard to flight and ancillary bookings, also handles calls related to service disruption.
-SH-2: Airport Check-in Agent 
-Provides customer service with regard to flight check-in, ancillary bookings, flight boarding and also handles passenger greviences related to service disruption.
-SH-3: Marketing Manager 
-Creates marketing campaigns and promotions.
-SH-4: Data Privacy Officer 
-Manages customer data privacy requirements for the Organisation.
-SH-5: Loyalty Manager  
-Drives loyalty offers and new product development.
-SH-6: Cabin Crew  
-Provides service to customers inflight and also promotes inflight sales.
-SH-7: CMP Manager  
-Configures rules and policies and drives requirements for enhancing the platform
-SH-8: Customer Affairs Executive  
-Handles customer complaints and compensation.
-SH-9: Data Analyst  
-Consolidates data from various operational systems to construct a thorough customer 360 view and unearth insights about customers in order to enhance Average Revenue per Customer
-(ARPC).
-SH-10: Inflight Retailer  
-Creates suitable product bundles for cross-selling during in-flight retail.
-SH-11: Cyber Security Operations Manager
-Ensures that there are no security breaches in the system
+ 
+- **SH-1: Contact Centre Agent**
+  - Provides customer service with regard to flight and ancillary bookings, also handles calls related to service disruption.
+ 
+- **SH-2: Airport Check-in Agent**
+  - Provides customer service with regard to flight check-in, ancillary bookings, flight boarding and also handles passenger grievances related to service disruption.
+ 
+- **SH-3: Marketing Manager**
+  - Creates marketing campaigns and promotions.
+ 
+- **SH-4: Data Privacy Officer**
+  - Manages customer data privacy requirements for the Organization.
+ 
+- **SH-5: Loyalty Manager**
+  - Drives loyalty offers and new product development.
+ 
+- **SH-6: Cabin Crew**
+  - Provides service to customers inflight and also promotes in-flight sales.
+ 
+- **SH-7: CMP Manager**
+  - Configures rules and policies and drives requirements for enhancing the platform.
+ 
+- **SH-8: Customer Affairs Executive**
+  - Handles customer complaints and compensation.
+ 
+- **SH-9: Data Analyst**
+  - Consolidates data from various operational systems to construct a thorough customer 360 view and unearth insights about customers in order to enhance Average Revenue per Customer (ARPC).
+ 
+- **SH-10: Inflight Retailer**
+  - Creates suitable product bundles for cross-selling during in-flight retail.
+ 
+- **SH-11: Cyber Security Operations Manager**
+  - Ensures that there are no security breaches in the system.
 
 ### Business Requirements
 
@@ -167,31 +181,15 @@ The effectiveness of implementing and operating the new Customer Management Plat
 
 ![Deployment](architecture-diagrams/Deployment.jpg)
 
-Environments - The CMP instances will be deployed across multiple environments
-Production environment: The production environment provides live services to your user base.
-Tier 1 SLA. deployed across several regions to provide redundancy and infrastructure fault tolerance.
-Process numbers of transactions and requests based on the business requirement.
-Development environment: Used for creating the application features. Limited number of users and data.
-Test environments: Environment to test performance, conduct UAT related to new feature and backup and restore procedures.
-Application Tiers
-Web Tier
-Micro frontends will be created and deployed for each domain functionality e.g. Profile, Case management etc 
-Provides HTTPS content to the client.
-Application Tier
-Microservices will be created and deployed
-Database Tier
-Consists of RDS databases. Backend services will interact with database to source data.
-Database will be deployed as active and standby. Active DB will replicate to standby.
-General guidelines
-Separate CI/CD per micro frontend /microservice for build and deployment of each image.
-Pipelines will contain Quality and Security checks
-Services will be deployed on EKS
-Deploy in antiaffinity mode with autoscaling
-Each data centre should have sufficient capacity to be able to take the full application load in the event of any failure.
-In event of failure configure health checks for automated failover.
-Backups and disaster recovery drills will be carried out to ensure set RPO and RTO can be met.
+|SL |Category|Description|
+| ---------------- | -------------------------------------- |---------------------------------------------------------------------------------------- |
+|1|Environments - The CMP instances will be deployed across multiple environments| 1. Production environment: a) The production environment provides live services to your user base. b) Tier 1 SLA. c) Deployed across several regions to provide redundancy and infrastructure fault tolerance. d) Processes numbers of transactions and requests based on the business requirement. 2.Development environment: a) Used for creating the application features. b) Limited number of users and data. 3.Test environments: a) Environment to test performance, conduct UAT related to new feature and backup and restore procedures.|
+|2|Application Tiers| 1. Web Tier: a) Micro frontends will be created and deployed for each domain functionality e.g. Profile, Case management etc. b) Provides HTTPS content to the client. 2. Application Tier: a) Microservices will be created and deployed. 3. Database Tier: a) Consists of RDS databases. b) Backend services will interact with database to source data. c) Database will be deployed as active and standby. Active DB will replicate to standby.|
+|3|General guidelines| 1. Separate CI/CD per micro frontend /microservice for build and deployment of each image. Pipelines will contain Quality and Security checks. 2. Services will be deployed on EKS. Deploy in anti affinity mode with autoscaling. 3. Each data centre should have sufficient capacity to be able to take the full application load in the event of any failure. In event of failure configure health checks for automated failover. Resources should be sufficient (CPU and memory) to match the application needs and these should be guaranteed. Ensure network policies are in place for pods/namespace. 4. Backups and disaster recovery drills will be carried out to ensure set RPO and RTO can be met.|
+|4|Observability| 1. Service Request/Response logs will be collected, stored and utilized for troubleshooting by application support teams. Splunk will be used for infrastructure monitoring. AppD instrumentation will be done to monitor application health. Distributed tracing and logging will be required for issue debugging and analysis.|
+|5|Edge Protection| WAF will be employed for edge security and traffic management|
 
-.
+
 ## Integration Diagram
 ![Integration](architecture-diagrams/Integration.jpg)
 
