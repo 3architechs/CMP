@@ -15,7 +15,7 @@ We have identified the following key architectural characteristics that are esse
 Prior to immersing ourselves in the architecture design phase, it is crucial that we establish a unanimous agreement on the foundational architectural style for our system. This choice bears considerable importance, as making adjustments later in the process could incur significant costs. Hence, this stands as our initial decision in the process
 To facilitate this decision-making process, we are leveraging an "Architecture Styles Worksheet" introduced by Mark Richards, available at https://www.developertoarchitect.com/resources.html.
 
-
+![Fundamental](../architecture-diagrams/Fundamental-Arch.png)
 
 ## Architecture Styles Evaluation
 We will evaluate the following architecture styles using the provided worksheet:
