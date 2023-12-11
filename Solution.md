@@ -250,58 +250,54 @@ customer and then chooses the best possible option to implement
 ## Well Architected Framework Tracability
 
 
-Name	Entity	High Level Solution	Fitness Function
-Performance Efficiency	
-User transaction should respond within the set limits  at peak load
-Read  <= 700ms (end to end) for 98 percentile transactions.
-Writes <=1.2 secs (end to end) for 98 percentile transactions.
-Conduct Performance tests to optimally provision resources and optimise resource behaviour.
-Implement data caching methodologies, data should be cached to edge locations  to enhance response time
-The platform has leveraged Caching; this allows for data being quickly retrieved from cache memory, leading to reduced latency and faster response times for microservices
-The platform has leveraged asynchronous messaging in the form of events 
-Availability	
-Platform components availability will be 99.95 %  end to end.
-Upgrades should take place with minimal down time
-Upgrades to application as well as infrastructure should take place with zero down time.
-Upgrades to database should have < 30mins down time
-Services are deployed across multiple regions.
-Services are loaded balanced across deployments
-Provision automated failover
-Utilize platform features related to self healing.
-Utilize platform features related to rolling upgrades.
-Automation of processes.
-Deployment in multiple availability zones for Resilience.
-Load balanced across deployments
-Scalability	
-System should be scalable to cater to sudden or projected growth in transactions eg. Peak periods
-Utilise container platforms capabilities.
-Configure auto scaling to progressively scale as required.
-Ability to serve request with minimal resource requirements.
-Design stateless transactions.
-The platform's microservices approach enhances scalability by enabling the independent development, deployment, and scaling of small, modular services
-The CMP system employs load balancing to distribute incoming traffic efficiently, ensuring optimal performance and preventing any individual component from becoming overloaded.
-K8s autoscale dynamically adjusting the number of running instances or pods based on the current workload, ensuring optimal resource utilization and responsiveness to varying demand
-Security	
-Compliance with GDPR including consent management, PCIDSS.
-Communication between components using HTTPs
-Sensitive data should be encrypted at rest
-Comprehensive authorisation and authentication mechanisms should be provisioned
-Ensure RBAC, MFA and least privilege access.
-Comprehensive logging and auditing of all customer data access and modifications.
+### Performance Efficiency
+#### Measurements
+- User transaction should respond within the set limits  at peak load
+- Read  <= 700ms (end to end) for 98 percentile transactions.
+- Writes <=1.2 secs (end to end) for 98 percentile transactions.
+#### Solution
+- The platform has leveraged Caching; this allows for data being quickly retrieved from cache memory, leading to reduced latency and faster response times for microservices.
+- The platform has leveraged asynchronous messaging in the form of events.
 
-Install certificates, utilise SSL/TLS protocols to exchange data.
-Encryption of data at rest using cryptographic keys.
-Safeguard cryptographic keys by storing using a secure solution e.g. Vault.
-Personal Data and Sensitive Data attributes should be masked and stored in order to meet GDPR norms related to data privacy protection.
-Define data retention policies for sensitive customer and user data.
-Assets should be accessed only by privileged users and after proper authentication.
-Grant access to users, groups, and applications at a specific scope. Use predefined roles. 
-Services to be secured via Oauth
-System users to be authenticated using Identity Provider.
-Azure AD tokens for user authentication and Okta for machine-to-machine (M2M) authentication.
-Utilization of SSL/TLS protocols for data exchange.
-Access is granted to users, groups, and applications at a specific scope.
-Personal Data and Sensitive Data attributes is masked and stored in order to meet GDPR norms related to data privacy protection.
-Data retention policies in place for sensitive customer data.
-
-
+### Availability
+#### Measurements
+- Platform components availability will be 99.95 %  end to end.
+- Upgrades should take place with minimal down time
+- Upgrades to application as well as infrastructure should take place with zero down time.
+- Upgrades to database should have < 30mins down time
+#### Solution
+- Deployment in multiple availability zones for Resilience.
+- Load balanced across deployments
+  
+### Scalability
+#### Measurements
+- System should be scalable to cater to sudden or projected growth in transactions eg. Peak periods
+- Read  <= 700ms (end to end) for 98 percentile transactions.
+- Writes <=1.2 secs (end to end) for 98 percentile transactions.
+#### Solution
+- The platform's microservices approach enhances scalability by enabling the independent development, deployment, and scaling of small, modular services.
+- The CMP system employs load balancing to distribute incoming traffic efficiently, ensuring optimal performance and preventing any individual component from becoming overloaded.
+- K8s autoscale dynamically adjusting the number of running instances or pods based on the current workload, ensuring optimal resource utilization and responsiveness to varying demand.
+  
+### Cost optimization
+#### Measurements
+- Ensure resources are provisioned in a cost effective manner and that they are optimally utilized.
+#### Solution
+- Application deployed in Kubernetes cluster with proper HPA configurations updated.
+- Re-use of enterprise capabilities, wherever possible.
+  
+  
+### Security
+#### Measurements
+- Compliance with GDPR including consent management, PCIDSS.
+- Communication between components using HTTPS.
+- Sensitive data should be encrypted at rest.
+- Comprehensive authorisation and authentication mechanisms should be provisioned.
+- RBAC, MFA and least privilege access.
+- Comprehensive logging and auditing of all customer data access and modifications.
+#### Solution
+- Azure AD tokens for user authentication and Okta for machine-to-machine (M2M) authentication.
+- Utilization of SSL/TLS protocols for data exchange.
+- Access is granted to users, groups, and applications at a specific scope.
+- Personal Data and Sensitive Data attributes is masked and stored in order to meet GDPR norms related to data privacy protection.
+- Data retention policies in place for sensitive customer data.
