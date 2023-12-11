@@ -176,12 +176,12 @@ The effectiveness of implementing and operating the new Customer Management Plat
 
 ## Component diagram - Preference and Consent Management
 
-
+![Component](architecture-diagrams/C2-Component.jpg)
 
 
 ## Deployment Diagram
 
-
+![Deployment](architecture-diagrams/Deployment.jpg)
 
 Environments - The CMP instances will be deployed across multiple environments
 Production environment: The production environment provides live services to your user base.
@@ -209,12 +209,13 @@ Backups and disaster recovery drills will be carried out to ensure set RPO and R
 
 .
 ## Integration Diagram
-
+![Integration](architecture-diagrams/Integration.jpg)
 
 
 
 
 ## Domain and Data Architecture
+![Data](architecture-diagrams/DataArchitecture.jpg)
 Please capture the main data assets used by the initiative and their relationships. A sample model is presented below. When the further details become available, the model can be elaborated to a logical level. Please note the model is at the conceptual level.
 
 
